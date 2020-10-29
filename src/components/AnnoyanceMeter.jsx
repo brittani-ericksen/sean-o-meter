@@ -1,49 +1,55 @@
 import React, { useState } from 'react';
 import { connect } from "react-redux";
 import { setLevel } from "../redux/actions";
+import WouldRatherButton from "./WouldRatherButton";
+import WouldRatherDetail from "./WouldRatherDetail";
 import styled from "styled-components";
 
 const RageContainer = styled.div`
     border: 1px solid black;
     border-radius: 10px;
+    display: inline-block;
     margin: 0 auto;
-    width: 150px;
 `
 const LevelOne = styled.div`
     background: linear-gradient(0deg, green, yellow);
-    border-radius: 0px 0px 10px 10px;
-    height: 50px;
-    width: 150px;
+    height: 75px;
+    width: 100px;
 `
 const LevelTwo = styled.div`
     background: linear-gradient(0deg, yellow, orange);
-    height: 50px;
-    width: 150px;
+    height: 75px;
+    width: 100px;
 `
 const LevelThree = styled.div`
     background: linear-gradient(0deg, orange, red);
-    height: 50px;
-    width: 150px;
+    height: 75px;
+    width: 100px;
 `
 const LevelFour = styled.div`
-    background: linear-gradient(0deg, red, darkred);
-    border-radius: 10px 10px 0px 0px;
-    height: 50px;
-    width: 150px;
+    background: linear-gradient(0deg, red, rgb(80, 0, 0));
+    height: 75px;
+    width: 100px;
 `
 
 const AnnoyanceMeter = ({ setLevel, level }) => {
 
     return (
         <>
-            <h1>How annoying is Sean today?</h1>
+            <h1>How insufferable is Sean today?</h1>
             <RageContainer>
+                HIGH
                 <LevelFour onClick={()=> setLevel("HIGH")}/>
                 <LevelThree onClick={() => setLevel("MEDIUM")}/>
                 <LevelTwo onClick={() => setLevel("LOW")}/>
                 <LevelOne onClick={() => setLevel("NONE")}/>
+                LOW
             </RageContainer>
-            <p>Annoyance Level: {level}.</p>
+            {level === "HIGH" ? <p>He must be telling stories about mouse dining again...</p> : null}
+            {level === "MEDIUM" ? <p>One dad joke too many for someone without kids.</p> : null}
+            {level === "LOW" ? <p>Another 80's style powerpoint?</p> : null}
+            {level === "NONE" ? <p>Impossible!</p> : null}
+            <WouldRatherDetail level={level} />
         </>
     );
 }
