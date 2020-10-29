@@ -48,7 +48,7 @@ const AnnoyanceMeter = ({ setLevel, level }) => {
             {level === "HIGH" ? <p>He must be telling stories about mouse dining again...</p> : null}
             {level === "MEDIUM" ? <p>One dad joke too many for someone without kids.</p> : null}
             {level === "LOW" ? <p>Another 80's style powerpoint?</p> : null}
-            {level === "NONE" ? <p>Impossible!</p> : null}
+            {level === "NONE" ? <p>Are you sure you have the right person?</p> : null}
             <WouldRatherDetail level={level} />
         </>
     );
