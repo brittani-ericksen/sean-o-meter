@@ -1,25 +1,26 @@
 import React from "react";
 import { iWouldRather } from "../wouldRather";
+import styled from "styled-components";
 
-
+const Detail = styled.p`
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+`;
 
 const WouldRatherDetail = (props) => {
-    const { level } = props;
-    
-    const randomInt = (min, max) => {
-        const int = Math.floor(Math.random() * (max - min + 1)) + min;
-        console.log("int: ", int);
-        return int;
-    }
-
-    let int = randomInt(0,9);
+    const { level, index } = props;
 
     return (
         <>
-            {level === "HIGH" ? <h2>I would much rather {iWouldRather.high[int]} than listen to Sean today.</h2> : null}
-            {level === "MEDIUM" ? <h2>I would much rather {iWouldRather.medium[int]} than listen to Sean today.</h2> : null}
-            {level === "LOW" ? <h2>I would much rather {iWouldRather.low[int]} than listen to Sean today.</h2> : null}
-            {level === "NONE" ? <h2>I would much rather {iWouldRather.none[int]} than listen to Sean today.</h2> : null}
+            <Detail>
+                {level === "HIGH" ? <p>{iWouldRather.high[index]} than listen to Sean.</p> : null}
+                
+                {level === "MEDIUM" ? <p>{iWouldRather.medium[index]} than listen to Sean.</p> : null}
+                
+                {level === "LOW" ? <p>{iWouldRather.low[index]} than listen to Sean.</p> : null}
+                
+                {level === "NONE" ? <p>{iWouldRather.none[index]} than listen to Sean.</p> : null}
+            </Detail>
         </>
     );
 }

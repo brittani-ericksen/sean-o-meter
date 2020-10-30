@@ -1,10 +1,11 @@
 export const iWouldRather = {
     high: [
+        "",
         "learn redux again", 
         "eat something I'm allergic to",
         "light myself on fire",
         "use hot sauce as eye drops",
-        "watch a class of kindergarteners have a zoom class",
+        "watch a class of kindergarteners on zoom",
         "listen to the entire Kidz Bop discography",
         "get randomly selected for a cavity search at the airport",
         "listen to a room full of people chewing",
@@ -12,6 +13,7 @@ export const iWouldRather = {
         "give a cat a bath"
     ],
     medium: [
+        "",
         "walk a mile on a road covered in Legos",
         "shave off my eyebrows",
         "get stung by a jellyfish and have a stranger pee on me",
@@ -24,6 +26,7 @@ export const iWouldRather = {
         "watch a Twilight movie marathon"
     ], 
     low: [
+        "",
         "scrub a McDonald's bathroom",
         "shower with my socks on",
         "only listen to Nickleback for the rest of my life",
@@ -36,6 +39,7 @@ export const iWouldRather = {
         "eat less and exercise more"
     ], 
     none: [
+        "",
         "listen to Jordan scream about Township",
         "delete my Netflix account",
         "go to a Yu-Gi-Oh convention",
