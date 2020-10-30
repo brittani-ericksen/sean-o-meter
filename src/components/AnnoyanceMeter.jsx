@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { connect } from "react-redux";
 import { setLevel } from "../redux/actions";
 import WouldRatherButton from "./WouldRatherButton";
@@ -86,7 +86,7 @@ const LevelOne = styled.div`
         border: 1px dotted white;
     }
 `
-const SnarkyComment = styled.p`
+const SnarkyComment = styled.h2`
     font-size: 20px;
 `;
 

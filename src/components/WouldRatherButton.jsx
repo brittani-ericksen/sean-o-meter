@@ -26,7 +26,7 @@ const BigButton = styled.div`
         background-color: darkgray;
     }
 `;
-const ButtonText = styled.p`
+const ButtonText = styled.h2`
     font-family: 'Staatliches', cursive;
     font-size: 38px;
     padding-top: 20%;
