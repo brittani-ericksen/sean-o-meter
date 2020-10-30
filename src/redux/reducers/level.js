@@ -1,7 +1,8 @@
 import { ACTION_SET_LEVEL } from "../actionTypes";
 
 const initialState = {
-    level: ""
+    level: "",
+    index: Number("")
 };
 
 const levelReducer = (state = initialState, action) => {
