@@ -10,6 +10,11 @@ const Wrapper = styled.div`
     margin-left: 4rem;
     margin-right: 4rem;
 `;
+const Heading = styled.h1`
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    text-shadow: 5px 5px #000000;
+`;
 const FadeDown = styled.div`
     animation: 3s ${keyframes`${fadeInDownBig}`};
     background: rgb(10, 33, 34);
@@ -90,7 +95,7 @@ const AnnoyanceMeter = ({ setLevel, level }) => {
     return (
         <>
             <Wrapper>
-                <h1>How annoying is Sean today?</h1>
+                <Heading>How annoying is Sean today?</Heading>
                     <div className="row">
                         <div className="column">
                             <FadeDown>
