@@ -11,13 +11,15 @@ This project was meant to be for fun and is not meant to insult anyone. I'm defi
 After spending a rough day going over Redux, I swore I would never touch it again. When looking for a way to store state in this project, I ended up going back to Redux and was able to implement it with some work.
 
 ## Screenshots
-
+<img src="./src/images/screenShot1.png"/>
+<img src="./src/images/screenShot2.png"/>
 
 ## Tech/framework used
 Built with React and Redux. Styled mainly with styled components.
 
 ## Code Example
-
+<img src="./src/images/code1.png"/>
+<img src="./src/images/code2.png"/>
 
 ## Tests
 One test to check if the Welcome page renders with the correct text. 
