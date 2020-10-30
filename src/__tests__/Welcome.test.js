@@ -19,5 +19,5 @@ it("renders with a header", () => {
     render(<Welcome />, container);
     });
     expect(
-        container.textContent).toBe("Sean-o-meter");
+        container.textContent).toBe("Sean-o-MeterClick Here");
 });
