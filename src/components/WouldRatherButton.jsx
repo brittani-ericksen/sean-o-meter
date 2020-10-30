@@ -4,23 +4,24 @@ import styled, { keyframes } from "styled-components";
 import { fadeInDownBig } from 'react-animations';
 
 const FadeDown = styled.div`
-    animation: 4s ${keyframes`${fadeInDownBig}`};
+    animation: 3s ${keyframes`${fadeInDownBig}`};
     background: rgb(10, 33, 34);
     border: 1px solid black;
     border-radius: 20px;
-    box-shadow: 4px 4px black;
+    box-shadow: 2px 3px 5px black;
     min-height: 490px;
     padding-left: 20px;
     padding-right: 20px;
 `;
 const BigButton = styled.div`
     background-color: gray;
-    border-radius: 50%;
+    border-radius: 30px;
+    box-shadow: 2px 2px black;
     cursor: pointer;
-    height: 150px;  
+    height: 110px;  
     margin: 0 auto;  
     margin-top: 100px;
-    width: 150px;
+    width: 200px;
 
     :active {
         background-color: darkgray;
@@ -29,7 +30,7 @@ const BigButton = styled.div`
 const ButtonText = styled.h2`
     font-family: 'Staatliches', cursive;
     font-size: 38px;
-    padding-top: 20%;
+    padding-top: 10px;
     text-shadow: 2px 2px #000000;
 `;
 

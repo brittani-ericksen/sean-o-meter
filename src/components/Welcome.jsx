@@ -7,9 +7,9 @@ const Heading = styled.h1`
     text-shadow: 5px 5px #000000;
 `;
 const EnterButton = styled.div`
-    background-color: white;
+    background-color: gray;
     border-radius: 30px;
-    box-shadow: 4px 4px black;
+    box-shadow: 2px 3px 5px black;
     cursor: pointer;
     height: 100px;  
     margin: 0 auto;  
@@ -20,7 +20,7 @@ const EnterButton = styled.div`
     }
 `;
 const ButtonText = styled.p`
-    color: gray;
+    color: white;
     font-family: 'Staatliches', cursive;
     font-size: 42px;
     padding-top: 22px;

@@ -20,7 +20,7 @@ const FadeDown = styled.div`
     background: rgb(10, 33, 34);
     border: 1px solid black;
     border-radius: 20px;
-    box-shadow: 4px 4px black;
+    box-shadow: 2px 3px 5px black;
     font-family: 'Montserrat', sans-serif;
     min-height: 490px;
     padding: 10px;
